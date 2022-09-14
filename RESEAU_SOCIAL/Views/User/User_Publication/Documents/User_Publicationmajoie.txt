@@ -1,0 +1,32 @@
+package first;
+import java.util.*;
+import java.util.InputMismatchException;
+public class monBonjour {
+	public static void saisie() {
+	while(true) {
+	   try {
+		   		Scanner entry=new Scanner(System.in);
+			    System.out.println("entrez un nombre");
+			    int nbre=entry.nextInt();
+			    System.out.println("Le nombre entré est:"+nbre+"\nFin");
+			    
+
+	    	break;
+	    }catch(InputMismatchException e) {
+	    	System.out.println("vous avez entrez une lettre ou un caractere special");
+	    	
+	    	
+	    }
+	  
+	    
+	}
+	
+}
+	
+	
+public static void main(String[] args) {
+		saisie();
+		
+	}
+	    	
+}
